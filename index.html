@@ -2,7 +2,24 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="icons/css/fontawesome.min.css"/>
+        <!-- Appel des fichiers css pour les icônes -->
+        <link rel="stylesheet" href="icons\css\fontawesome.css"/>
+        <link rel="stylesheet" href="icons\css\fontawesome.min.css"/>
+        <link rel="stylesheet" href="icons\css\solid.css"/>
+        <link rel="stylesheet" href="icons\css\solid.min.css"/>
+        <link rel="stylesheet" href="icons\css\all.css"/>
+        <link rel="stylesheet" href="icons\css\all.min.css"/>
+        <link rel="stylesheet" href="icons\css\brands.css"/>
+        <link rel="stylesheet" href="icons\css\brands.min.css"/>
+        <link rel="stylesheet" href="icons\css\regular.css"/>
+        <link rel="stylesheet" href="icons\css\regular.min.css"/>
+        <link rel="stylesheet" href="icons\css\svg-with-js.css"/>
+        <link rel="stylesheet" href="icons\css\svg-with-js.min.css"/>
+        <link rel="stylesheet" href="icons\css\v4-shims.css"/>
+        <link rel="stylesheet" href="icons\css\v4-shims.min.css"/>
+		
+		<!-- Police google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&dispay=swap" rel="stylesheet"/>
         <title>Reservia</title>
     </head>
 
@@ -25,8 +42,8 @@
             
             <!-- insertion de la barre de recherche -->
             <form>
-                <div id="localis"><img src="icones/localise.png" alt=".."></div>
                 <p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
                     <input type="text" value="Marseille, France" id="champ_de_saisie"/>
                     <input type="submit" value="Rechercher"/>
                 </p>
@@ -37,14 +54,17 @@
                 <p>Filtres</p>
                 <ul>
                     <li><i class="fas fa-money-bill-wave"></i>économique</li>
-                    <li><img src="icones/famille.png" alt=".."/>Familial</li>
-                    <li><img src="icones/coeur.png" alt=".."/>Romantique</li>
-                    <li><img src="icones/animal.png" alt=".."/>Animaux autorisés</li>
+                    <li><i class="fa fa-child" aria-hidden="true"></i>Familial</li>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i>Romantique</li>
+                    <li><i class="fas fa-dog"></i>Animaux autorisés</li>
                 </ul>
             </div>
 
             <!-- Bloc d'information sur le nombre de logements dans la ville -->
-            <p id="nb_logments_ville">Plus de 500 logemments sont disponiles dans cette ville</p>
+            <p id="nb_logments_ville">
+				<i class="fa fa-info" aria-hidden="true"></i>
+				Plus de 500 logemments sont disponiles dans cette ville
+			</p>
         </div>
 
     <!-- Insection des sections Hébergements_à_Marseille et Les_Plus_Populaires -->
@@ -52,72 +72,72 @@
             <section id="hebergements_marseille">
                 <h1>Hébergements à Marseille</h1>
                 <div id="herg_dispo">
-                    <div id="la_cannebiere">
+                    <a href="#"  id="la_cannebiere">
                         <div class="description">
                             <h2>Auberge la Cannebière</h2>
                             <p>Nuit à partir de <span class="chiffre">25€</span></p>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/emptystar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
                         </div>
-                    </div>
-                    <div id="port">
+                    </a>
+                    <a href="#"  id="port">
                         <div class="description">
                             <h2>Hôtel du Port</h2>
                             <p>Nuit à partir de <span class="chiffre">52€</span></p>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                         </div>
-                    </div>
-                    <div id="mouettes">
+                    </a>
+                    <a href="#"  id="mouettes">
                         <div class="description">
                             <h2>Hôtel les mouettes</h2>
                             <p>Nuit à partir de <span class="chiffre">76€</span></p>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/emptystar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
                         </div>
-                    </div>
-                    <div id="mer">
+                    </a>
+                    <a href="#"  id="mer">
                         <div class="description">
                             <h2>Hôtel de la mer</h2>
                             <p>Nuit à partir de <span class="chiffre">46€</span></p>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/emptystar.png" alt=".."/>
-                            <img src="icones/emptystar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
                         </div>
-                    </div>
-                    <div id="panier">
+                    </a>
+                    <a href="#"  id="panier">
                         <div class="description">
                             <h2>Auberge le Panier</h2>
                             <p>Nuit à partir de <span class="chiffre">23€</span></p>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/emptystar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
                         </div>
-                    </div>
-                    <div id="amina">
+                    </a>
+                    <a href="#"  id="amina">
                         <div class="description">
                             <h2>Hôtel chez Amina</h2>
                             <p>Nuit à partir de <span class="chiffre">96€</span></p>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
-                            <img src="icones/fullstar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <p>Afficher plus</p>
@@ -125,42 +145,41 @@
             <section id="populaires">
                 <div id="populaires_titre">
                     <h1>Les plus populaires</h1>
-                    <img src="icones/tendance.png" alt=".."/>
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fa fa-chart-line"></i>
                 </div>
-                <div id="matin">
+                <a href="#" id="matin">
                     <div class="description">
                         <h2>Hôtel le soleil du matin</h2>
                         <p>Nuit à partir de <span class="chiffre">128€</span></p>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                     </div>
-                </div>
-                <div id="hotes">
+                </a>
+                <a href="#" id="hotes">
                     <div class="description">
                         <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                         <p>Nuit à partir de <span class="chiffre">71€</span></p>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/emptystar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
                     </div>
-                </div>
-                <div id="blanc">
+                </a>
+                <a href="#"  id="blanc">
                     <div class="description">
                         <h2>Hôtel Tout bleu et Blanc</h2>
                         <p>Nuit à partir de <span class="chiffre">68€</span></p>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/fullstar.png" alt=".."/>
-                        <img src="icones/emptystar.png" alt=".."/>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
                     </div>
-                </div>
+                </a>
             </section>
         </div>
 
@@ -168,29 +187,29 @@
         <div class="conteneur">
             <h1>Activités à Marseille</h1>
             <section id="activites">
-                <div id="vieux_port">
+                <a href="#" id="vieux_port">
                     <h2>Vieux Port</h2>
-                </div>
+                </a>
                 <!-- sous division 1 -->
                 <div id="volet_vertic_deux">
-                    <div id="pomegues">
+                    <a href="#" id="pomegues">
                         <h2>Fort de Pomègues</h2>
-                    </div>
-                    <div id="frioul">
+                    </a>
+                    <a href="#" id="frioul">
                         <h2>Îles du Frioul</h2>
-                    </div>
+                    </a>
                 </div>
-                <div id="parc_calanques">
+                <a href="#" id="parc_calanques">
                     <h2>Parc National des Calanques</h2>
-                </div>
+                </a>
                 <!-- sous division 2 -->
                 <div id="volet_vertic_quatre">
-                    <div id="garde">
+                    <a href="#" id="garde">
                         <h2>Notre-Dame-de-la-Garde</h2>
-                    </div>
-                    <div id="longchamp">
+                    </a>
+                    <a href="#" id="longchamp">
                         <h2>Parc Longchamp</h2>
-                    </div>
+                    </a>
                 </div>
             </section>
         </div>
