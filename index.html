@@ -30,13 +30,15 @@
         <header>
             <div class="conteneur">
                 <img src="img/reservia_logo.svg" alt="logo_reservia" id="logo_reservia"/>
-                <nav>
-                    <ul>
-                        <li><a href="#hebergements_marseille">Hébergements</a></li>
-                        <li><a href="#activites">Activités</a></li>
-                    </ul>
-                </nav>
-                <p><a href="#">S'inscrire</a></p>
+                <div id="volet_droit">
+                    <nav>
+                        <ul>
+                            <li><a href="#hebergements_marseille">Hébergements</a></li>
+                            <li><a href="#activites">Activités</a></li>
+                        </ul>
+                    </nav>
+                    <p><a href="#">S'inscrire</a></p>
+                </div>
             </div>
         </header>
         <div class="conteneur">
@@ -45,11 +47,11 @@
             
             <!-- insertion de la barre de recherche -->
             <form>
-                <p>
+                <span>
 					<i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <input type="text" value="Marseille, France" id="champ_de_saisie"/>
-                    <input type="submit" value="Rechercher"/>
-                </p>
+                </span>
+                <input type="text" value="Marseille, France" id="champ_de_saisie"/>
+                <input type="submit" value="Rechercher"/>
             </form>
 
             <!-- Insertion des filtres -->
