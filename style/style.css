@@ -1,8 +1,8 @@
 /* Outil déboguage */
-/* header + .conteneur, header + .conteneur *
+body .conteneur, body .conteneur *
 {
     border:solid 1px black;
-} */
+}
 /* Définition de la Police Raleway */
 @font-face 
 {
@@ -119,7 +119,9 @@ header .conteneur #volet_droit
 /********* FIN DE L'ENTÊTE (HEADER) *********/
 
 
-/********* DEBUT DU VOLET DE LA BARRE DE RECHERCHE ET DES FILTRES *********/
+/********* DEBUT DU VOLET DE LA BARRE DE RECHERCHE - DES FILTRES ET DE LA PHRASE INFORMATIVE *********/
+/* Le bloc de la partie*/
+header + .conteneur {margin-bottom:36px;}
 /* Titre de la partie */
 header + .conteneur h1
 {
@@ -239,3 +241,28 @@ form
         position:relative;
         left:-10px;
     }
+/* Bloc d'information sur le nombre de logements dans la ville */
+#nb_logments_ville
+{
+    margin:0px;
+    margin-top:36px;
+    margin-left:6px;
+    display:flex;
+    align-items:center;
+    font: size 0.9em;
+}
+    /* L'icône d'information */
+    #nb_logments_ville span
+    {
+        height:20px;
+        width:20px;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        color:#0065FC;
+        border-radius:20px;
+        margin-right:1%;
+        border: solid 2px #F2F2F2;
+        font-size:0.75em;
+    }
+/********* FIN DU VOLET DE LA BARRE DE RECHERCHE - DES FILTRES ET DE LA PHRASE INFORMATIVE *********/
