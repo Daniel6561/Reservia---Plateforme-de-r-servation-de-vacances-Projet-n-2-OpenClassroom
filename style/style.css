@@ -1,8 +1,8 @@
 /* Outil déboguage */
-header + .conteneur, header + .conteneur *
+/* header + .conteneur, header + .conteneur *
 {
     border:solid 1px black;
-}
+} */
 /* Définition de la Police Raleway */
 @font-face 
 {
@@ -117,3 +117,125 @@ header .conteneur #volet_droit
             color:#0065FC;
         }
 /********* FIN DE L'ENTÊTE (HEADER) *********/
+
+
+/********* DEBUT DU VOLET DE LA BARRE DE RECHERCHE ET DES FILTRES *********/
+/* Titre de la partie */
+header + .conteneur h1
+{
+    margin:0px;
+    padding:0px;
+    font-size:1.4em;
+    font-weight:bold;
+}
+/* Paragraphe en dessous du titre */
+header + .conteneur h1 + p
+{
+    margin:0px;
+    margin-top:10px;
+    padding:0px;
+    font-size:0.98em;
+}
+/*Formulaire barre de recherche*/
+form
+{
+    margin-top:19px;
+    margin-bottom:30px;
+    display:flex;
+    height:50px;
+    width:418px;
+    border-radius:15px;
+    overflow:hidden;
+    font-size:1.4em;
+}
+    /*  L'image */
+    form span
+    {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color:#F2F2F2;
+
+        /* flex:1; */
+        width:51px;
+    }
+    /*Le champs de saisie*/
+    #champ_de_saisie
+    {
+        /* flex:4.5; */
+        text-align:left;
+        padding-left:16px;
+        font-weight:bold;
+        border:solid 1px #F2F2F2;
+
+        font-size:0.8em;
+    }
+    /* Le bouton de recherche */
+    #bouton_recherche
+    {
+        color:white;
+        background-color:#0065FC;
+        /* flex:2.5; */
+        font-weight:bold;
+        font-size:0.8em;
+        border:0px;
+    }
+/* Bannière des filtres */
+#filtres
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:938px;
+    font-weight:bold;
+}
+    /* Mot introduisant les filtres */
+    #filtres p
+    {
+        margin:0px;
+        margin-left:10px;
+        font-size:1.15em;
+    }
+    /* Regroupement des listes de filtres */
+    #filtres ul
+    {
+        margin:0px;
+        padding:0px;
+        display:flex;
+        justify-content:space-between;
+        width:88%;
+        height:50px;
+        font-size:1.2em;
+    }
+    /* Chaque liste ---- Chaque filtre */
+    #filtres li
+    {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        border-radius:25px;
+        padding-right:2%;
+        border:solid 3px #F2F2F2;
+    }
+    /*Au survol des filtres*/
+    #filtres li:hover
+    {
+        border:solid 3px #DEEBFF;
+        background-color:#DEEBFF;
+        color:#0065FC;
+        cursor:pointer;
+    }
+    /*Icone des filtres*/
+    li span
+    {
+        width:50px;
+        height:50px;
+        border-radius:50px;
+        color:#0065FC;
+        background-color:#DEEBFF;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:relative;
+        left:-10px;
+    }
