@@ -1,8 +1,8 @@
 /* Outil déboguage */
-body .conteneur, body .conteneur *
+/* body .conteneur, body .conteneur *
 {
     border:solid 1px black;
-}
+} */
 /* Définition de la Police Raleway */
 @font-face 
 {
@@ -266,3 +266,109 @@ form
         font-size:0.75em;
     }
 /********* FIN DU VOLET DE LA BARRE DE RECHERCHE - DES FILTRES ET DE LA PHRASE INFORMATIVE *********/
+
+
+/********* DEBUT DES SECTIONS HEBERGEMENTS A MARSEILLE - ET - LES PLUS POPULAIRES *********/
+header + .conteneur + .conteneur
+{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+/* Le bloc des hébergements disponibles */
+#hebergements_marseille
+{
+    flex:2.09524;
+    margin-right:2.98%;
+    border-radius:18px;
+    background-color:#F2F2F2;
+    min-height:625px;
+}
+    /* Titre du bloc des hébergements à Marseille */
+    #hebergements_marseille h1
+    {
+        margin-bottom:0%;
+        margin-left:2%;
+        margin-right:2.5%;
+        font-size:1.4em;
+        font-weight:bold;
+    }
+    /* Bloc des hébergements disponibles dans la ville*/
+    #herg_dispo
+    {
+        display:flex;
+        justify-content:space-around;
+        flex-wrap:wrap;
+        align-content:space-around;
+        align-items:center;
+        min-height:450px;
+        padding:0.9%;
+        margin:0px;
+    }
+        /* Spécification pour l'ensemble des logements */
+        #herg_dispo a
+        {
+            width:235px;
+            height:190px;
+            /* margin:3%; */
+            border:5px white solid;
+            overflow:hidden;
+            border-radius:18px;
+            display:flex;
+            align-items: flex-end;
+        }
+        /*Les bannières de dexcription pour les logements dans n'importe quelle section*/
+        .description
+        {
+            background-color:white;
+            padding:5px;
+        }
+        /*Les étoiles*/
+        .description i
+        {
+            font-size:0.8em;
+            margin:0px;
+        }
+        #fullstar {color:#0065FC;}
+        #emptystar {color:#F2F2F2;}
+        /*Titre de chaque logement*/
+        .description h2
+        {
+            font-size:0.9em;
+            margin:0px;
+            margin-bottom:8px;
+        }
+        /*Petite phrase sur le prix*/
+        .description p
+        {
+            font-size:0.75em;
+            margin:0px;
+        }
+        /*Style du prix*/
+        .chiffre
+        {
+            font-weight:bold;
+        }
+        /*Les bannières de dexcription pour les logements dans cette section*/
+        #hebergements_marseille .description
+        {
+            background-color:white;
+            width:100%;
+            height:75px;
+        }
+            /*Etoiles de cette partie*/
+            .description i
+            {
+                margin-top:10px;
+            }
+        /*Premier logement*/
+        #la_cannebiere
+        {}
+/* Bloc des logements populaires */
+#populaires
+{
+    flex:1;
+    padding:2.98%;
+    border-radius:16px;
+    background-color:#F2F2F2;
+}
