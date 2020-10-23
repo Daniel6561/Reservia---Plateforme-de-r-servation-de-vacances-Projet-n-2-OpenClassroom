@@ -1,8 +1,8 @@
 /* Outil déboguage */
-/* body .conteneur, body .conteneur *
+body .conteneur, body .conteneur *
 {
     border:solid 1px black;
-} */
+}
 /* Définition de la Police Raleway */
 @font-face 
 {
@@ -283,13 +283,12 @@ header + .conteneur + .conteneur
     border-radius:18px;
     background-color:#F2F2F2;
     min-height:625px;
+    padding:2%;
 }
     /* Titre du bloc des hébergements à Marseille */
     #hebergements_marseille h1
     {
-        margin-bottom:0%;
-        margin-left:2%;
-        margin-right:2.5%;
+        margin:0px;
         font-size:1.4em;
         font-weight:bold;
     }
@@ -302,7 +301,6 @@ header + .conteneur + .conteneur
         align-content:space-around;
         align-items:center;
         min-height:450px;
-        padding:0.9%;
         margin:0px;
     }
         /* Spécification pour l'ensemble des logements */
@@ -310,7 +308,6 @@ header + .conteneur + .conteneur
         {
             width:235px;
             height:190px;
-            /* margin:3%; */
             border:5px white solid;
             overflow:hidden;
             border-radius:18px;
@@ -326,7 +323,7 @@ header + .conteneur + .conteneur
         /*Les étoiles*/
         .description i
         {
-            font-size:0.8em;
+            font-size:0.7em;
             margin:0px;
         }
         #fullstar {color:#0065FC;}
