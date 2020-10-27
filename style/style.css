@@ -468,8 +468,8 @@ header + .conteneur + .conteneur
 
 /********* FIN DES SECTIONS HEBERGEMENTS A MARSEILLE - ET - LES PLUS POPULAIRES *********/
 
-/* --------Ombrage---------------- */
-section a {box-shadow:  0 0 0.8em grey;}
+    /* --------Ombrage pour les logements---------------- */
+    section a {box-shadow:  0 0 0.8em grey;}
 
 
 /********* DEBUT DU VOLET ACTIVITES A MARSEILLE *********/
