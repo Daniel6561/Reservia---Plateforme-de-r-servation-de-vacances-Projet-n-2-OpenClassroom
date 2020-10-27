@@ -27,213 +27,215 @@
     </head>
 
     <body>
-        <header>
+        <div id="conteneur_princip">
+            <header>
+                <div class="conteneur">
+                    <img src="img/reservia_logo.svg" alt="logo_reservia" id="logo_reservia"/>
+                    <div id="volet_droit">
+                        <nav>
+                            <ul>
+                                <li><a href="#hebergements_marseille">Hébergements</a></li>
+                                <li><a href="#activites">Activités</a></li>
+                            </ul>
+                        </nav>
+                        <p><a href="#">S'inscrire</a></p>
+                    </div>
+                </div>
+            </header>
             <div class="conteneur">
-                <img src="img/reservia_logo.svg" alt="logo_reservia" id="logo_reservia"/>
-                <div id="volet_droit">
-                    <nav>
-                        <ul>
-                            <li><a href="#hebergements_marseille">Hébergements</a></li>
-                            <li><a href="#activites">Activités</a></li>
-                        </ul>
-                    </nav>
-                    <p><a href="#">S'inscrire</a></p>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+                
+                <!-- insertion de la barre de recherche -->
+                <form>
+                    <span>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    </span>
+                    <input type="text" value="Marseille, France" id="champ_de_saisie"/>
+                    <input type="submit" value="Rechercher" id="bouton_recherche"/>
+                </form>
+    
+                <!-- Insertion des filtres -->
+                <div id="filtres">
+                    <p>Filtres</p>
+                    <ul>
+                        <li><span><i class="fas fa-money-bill-wave"></i></span>économique</li>
+                        <li><span><i class="fa fa-child" aria-hidden="true"></i></span>Familial</li>
+                        <li><span><i class="fa fa-heart" aria-hidden="true"></i></span>Romantique</li>
+                        <li><span><i class="fas fa-dog"></i></span>Animaux autorisés</li>
+                    </ul>
                 </div>
+    
+                <!-- Bloc d'information sur le nombre de logements dans la ville -->
+                <p id="nb_logments_ville">
+                    <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                    Plus de 500 logemments sont disponiles dans cette ville
+                </p>
             </div>
-        </header>
-        <div class="conteneur">
-            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-            
-            <!-- insertion de la barre de recherche -->
-            <form>
-                <span>
-					<i class="fa fa-map-marker" aria-hidden="true"></i>
-                </span>
-                <input type="text" value="Marseille, France" id="champ_de_saisie"/>
-                <input type="submit" value="Rechercher" id="bouton_recherche"/>
-            </form>
-
-            <!-- Insertion des filtres -->
-            <div id="filtres">
-                <p>Filtres</p>
-                <ul>
-                    <li><span><i class="fas fa-money-bill-wave"></i></span>économique</li>
-                    <li><span><i class="fa fa-child" aria-hidden="true"></i></span>Familial</li>
-                    <li><span><i class="fa fa-heart" aria-hidden="true"></i></span>Romantique</li>
-                    <li><span><i class="fas fa-dog"></i></span>Animaux autorisés</li>
-                </ul>
-            </div>
-
-            <!-- Bloc d'information sur le nombre de logements dans la ville -->
-            <p id="nb_logments_ville">
-				<span><i class="fa fa-info" aria-hidden="true"></i></span>
-				Plus de 500 logemments sont disponiles dans cette ville
-			</p>
-        </div>
-
-    <!-- Insection des sections Hébergements_à_Marseille et Les_Plus_Populaires -->
-        <div class="conteneur">
-            <section id="hebergements_marseille">
-                <h1>Hébergements à Marseille</h1>
-                <div id="herg_dispo">
-                    <a href="#"  id="la_cannebiere">
-                        <div class="im_herg"></div>
-                        <div class="description">
-                            <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de <span class="chiffre">25€</span></p>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                        </div>
-                    </a>
-                    <a href="#"  id="port">
-                        <div class="im_herg"></div>
-                        <div class="description">
-                            <h2>Hôtel du Port</h2>
-                            <p>Nuit à partir de <span class="chiffre">52€</span></p>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                        </div>
-                    </a>
-                    <a href="#"  id="mouettes">
-                        <div class="im_herg"></div>
-                        <div class="description">
-                            <h2>Hôtel les mouettes</h2>
-                            <p>Nuit à partir de <span class="chiffre">76€</span></p>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                        </div>
-                    </a>
-                    <a href="#"  id="mer">
-                        <div class="im_herg"></div>
-                        <div class="description">
-                            <h2>Hôtel de la mer</h2>
-                            <p>Nuit à partir de <span class="chiffre">46€</span></p>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                        </div>
-                    </a>
-                    <a href="#"  id="panier">
-                        <div class="im_herg"></div>
-                        <div class="description">
-                            <h2>Auberge le Panier</h2>
-                            <p>Nuit à partir de <span class="chiffre">23€</span></p>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                        </div>
-                    </a>
-                    <a href="#"  id="amina">
-                        <div class="im_herg"></div>
-                        <div class="description">
-                            <h2>Hôtel chez Amina</h2>
-                            <p>Nuit à partir de <span class="chiffre">96€</span></p>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                            <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                        </div>
-                    </a>
-                </div>
-
-                <p>Afficher plus</p>
-            </section>
-            <section id="populaires">
-                <div id="populaires_titre">
-                    <h1>Les plus populaires</h1>
-                    <i class="fa fa-chart-line"></i>
-                </div>
-                <div id="herg_popu">
-                    <a href="#" id="matin">
-                        <div class="im_popu"></div>
-                        <div class="description">
-                            <h2>Hôtel le soleil du matin</h2>
-                            <p>Nuit à partir de <span class="chiffre">128€</span></p>
-                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
-                        </div>
-                    </a>
-                    <a href="#" id="hotes">
-                        <div class="im_popu"></div>
-                        <div class="description">
-                            <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-                            <p>Nuit à partir de <span class="chiffre">71€</span></p>
+    
+        <!-- Insection des sections Hébergements_à_Marseille et Les_Plus_Populaires -->
+            <div class="conteneur">
+                <section id="hebergements_marseille">
+                    <h1>Hébergements à Marseille</h1>
+                    <div id="herg_dispo">
+                        <a href="#"  id="la_cannebiere">
+                            <div class="im_herg"></div>
+                            <div class="description">
+                                <h2>Auberge la Cannebière</h2>
+                                <p>Nuit à partir de <span class="chiffre">25€</span></p>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                        </div>
-                    </a>
-                    <a href="#"  id="blanc">
-                        <div class="im_popu"></div>
-                        <div class="description">
-                            <h2>Hôtel Tout bleu et Blanc</h2>
-                            <p>Nuit à partir de <span class="chiffre">68€</span></p>
+                            </div>
+                        </a>
+                        <a href="#"  id="port">
+                            <div class="im_herg"></div>
+                            <div class="description">
+                                <h2>Hôtel du Port</h2>
+                                <p>Nuit à partir de <span class="chiffre">52€</span></p>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            </div>
+                        </a>
+                        <a href="#"  id="mouettes">
+                            <div class="im_herg"></div>
+                            <div class="description">
+                                <h2>Hôtel les mouettes</h2>
+                                <p>Nuit à partir de <span class="chiffre">76€</span></p>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
                                 <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
-                        </div>
-                    </a>
-                </div>
-            </section>
-        </div>
-
-        <!-- Volet Activités à Marseille -->
-        <div class="conteneur">
-            <h1>Activités à Marseille</h1>
-            <section id="activites">
-                <a href="#" id="vieux_port">
-                    <div class="im_act"></div>
-                    <h2>Vieux Port</h2>
-                </a>
-                <!-- sous division 1 -->
-                <div id="volet_vertic_deux">
-                    <a href="#" id="pomegues">
+                            </div>
+                        </a>
+                        <a href="#"  id="mer">
+                            <div class="im_herg"></div>
+                            <div class="description">
+                                <h2>Hôtel de la mer</h2>
+                                <p>Nuit à partir de <span class="chiffre">46€</span></p>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
+                            </div>
+                        </a>
+                        <a href="#"  id="panier">
+                            <div class="im_herg"></div>
+                            <div class="description">
+                                <h2>Auberge le Panier</h2>
+                                <p>Nuit à partir de <span class="chiffre">23€</span></p>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
+                            </div>
+                        </a>
+                        <a href="#"  id="amina">
+                            <div class="im_herg"></div>
+                            <div class="description">
+                                <h2>Hôtel chez Amina</h2>
+                                <p>Nuit à partir de <span class="chiffre">96€</span></p>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <p>Afficher plus</p>
+                </section>
+                <section id="populaires">
+                    <div id="populaires_titre">
+                        <h1>Les plus populaires</h1>
+                        <i class="fa fa-chart-line"></i>
+                    </div>
+                    <div id="herg_popu">
+                        <a href="#" id="matin">
+                            <div class="im_popu"></div>
+                            <div class="description">
+                                <h2>Hôtel le soleil du matin</h2>
+                                <p>Nuit à partir de <span class="chiffre">128€</span></p>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                            </div>
+                        </a>
+                        <a href="#" id="hotes">
+                            <div class="im_popu"></div>
+                            <div class="description">
+                                <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                                <p>Nuit à partir de <span class="chiffre">71€</span></p>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
+                            </div>
+                        </a>
+                        <a href="#"  id="blanc">
+                            <div class="im_popu"></div>
+                            <div class="description">
+                                <h2>Hôtel Tout bleu et Blanc</h2>
+                                <p>Nuit à partir de <span class="chiffre">68€</span></p>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="fullstar"></i>
+                                    <i class="fa fa-star" aria-hidden="true" id="emptystar"></i>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+    
+            <!-- Volet Activités à Marseille -->
+            <div class="conteneur">
+                <h1>Activités à Marseille</h1>
+                <section id="activites">
+                    <a href="#" id="vieux_port">
                         <div class="im_act"></div>
-                        <h2>Fort de Pomègues</h2>
+                        <h2>Vieux Port</h2>
                     </a>
-                    <a href="#" id="frioul">
+                    <!-- sous division 1 -->
+                    <div id="volet_vertic_deux">
+                        <a href="#" id="pomegues">
+                            <div class="im_act"></div>
+                            <h2>Fort de Pomègues</h2>
+                        </a>
+                        <a href="#" id="frioul">
+                            <div class="im_act"></div>
+                            <h2>Îles du Frioul</h2>
+                        </a>
+                    </div>
+                    <a href="#" id="parc_calanques">
                         <div class="im_act"></div>
-                        <h2>Îles du Frioul</h2>
+                        <h2>Parc National des Calanques</h2>
                     </a>
-                </div>
-                <a href="#" id="parc_calanques">
-                    <div class="im_act"></div>
-                    <h2>Parc National des Calanques</h2>
-                </a>
-                <!-- sous division 2 -->
-                <div id="volet_vertic_quatre">
-                    <a href="#" id="garde">
-                        <div class="im_act"></div>
-                        <h2>Notre-Dame-de-la-Garde</h2>
-                    </a>
-                    <a href="#" id="longchamp">
-                        <div class="im_act"></div>
-                        <h2>Parc Longchamp</h2>
-                    </a>
-                </div>
-            </section>
+                    <!-- sous division 2 -->
+                    <div id="volet_vertic_quatre">
+                        <a href="#" id="garde">
+                            <div class="im_act"></div>
+                            <h2>Notre-Dame-de-la-Garde</h2>
+                        </a>
+                        <a href="#" id="longchamp">
+                            <div class="im_act"></div>
+                            <h2>Parc Longchamp</h2>
+                        </a>
+                    </div>
+                </section>
+            </div>
         </div>
 
         <!-- Pied de page -->

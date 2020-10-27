@@ -18,8 +18,12 @@
 body
 {
     font-family:'raleway', 'open-sans', Arial, Helvetica, sans-serif;
+}
+#conteneur_princip
+{
     padding-left:1%;
     padding-right:1%;
+    margin:auto;
 }
 .conteneur
 {
@@ -469,7 +473,7 @@ header + .conteneur + .conteneur
 /********* FIN DES SECTIONS HEBERGEMENTS A MARSEILLE - ET - LES PLUS POPULAIRES *********/
 
     /* --------Ombrage pour les logements---------------- */
-    section a {box-shadow:  0 0 0.8em grey;}
+    section a {box-shadow:  0 0 0.4em grey;}
 
 
 /********* DEBUT DU VOLET ACTIVITES A MARSEILLE *********/
@@ -479,6 +483,7 @@ header + .conteneur + .conteneur +.conteneur
     align-items:stretch;
     justify-content: space-between;
     min-height:500px;
+    margin-bottom:62px;
 }
 /*Les différentes activités*/
 #activites
@@ -567,3 +572,42 @@ header + .conteneur + .conteneur +.conteneur
     {
         background-image:url('../img/activity/medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
     }
+
+/********* FIN DU VOLET ACTIVITES A MARSEILLE *********/
+
+
+
+/********* DEBUT DU PIED DE PAGE *********/
+footer
+{
+    background-color: #F2F2F2;
+    padding-left:1%;
+    padding-right:1%;
+    font-size:0.9em;
+    padding-top:2.3%;
+    padding-bottom:2.3%;
+}
+footer .conteneur
+{
+    display:flex;
+    margin:auto;
+    max-width: 1350px;
+    justify-content:space-between;
+}
+#a_propos,#hebergements,#assistance
+{
+    flex:1;
+}
+footer h1
+{
+    font-weight:bold;
+    font-size:0.9em;
+    margin:0px;
+    margin-bottom:25px;
+}
+footer p
+{
+    margin-bottom:20px;
+}
+
+/********* FIN DU PIED DE PAGE *********/
