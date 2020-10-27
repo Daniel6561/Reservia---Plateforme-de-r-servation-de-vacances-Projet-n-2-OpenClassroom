@@ -287,7 +287,7 @@ header + .conteneur + .conteneur
     padding:2%;
 }
     /* Titre du bloc des hébergements à Marseille */
-    #hebergements_marseille h1, #populaires h1
+    #hebergements_marseille h1, #populaires h1, header + .conteneur + .conteneur +.conteneur h1
     {
         margin:0px;
         font-size:1.4em;
@@ -354,7 +354,7 @@ header + .conteneur + .conteneur
             height:75px;
         }
         /*Les images d'hebergement*/
-        .im_herg
+        .im_act
         {
             /* display:flex; */
             height:100%;
@@ -468,4 +468,57 @@ header + .conteneur + .conteneur
 
 /********* FIN DES SECTIONS HEBERGEMENTS A MARSEILLE - ET - LES PLUS POPULAIRES *********/
 
-section a {box-shadow: 3px 3px 2px grey;}
+/* --------Ombrage si posible  section a {box-shadow: 3px 3px 2px grey;}---------------- */
+
+
+/********* DEBUT DU VOLET ACTIVITES A MARSEILLE *********/
+header + .conteneur + .conteneur +.conteneur
+{
+    display:flex; flex-direction:column;
+    align-items:stretch;
+    justify-content: space-between;
+    min-height:500px;
+}
+/*Les différentes activités*/
+#activites
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height:450px;
+}
+/*Sous bloc du bloc des activités*/
+    #vieux_port,#parc_calanques,#volet_vertic_deux,#volet_vertic_quatre
+    {
+        width:22.5%;
+    }
+    #vieux_port
+    {
+        width:22.5%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius:18px;
+        overflow:hidden;
+    }
+    /*Nom des lieux*/
+    #activites h2
+    {
+        font-weight:bold;
+        font-size:0.9em;
+        max-height:56px;
+        background-color:white;
+        margin:0px;
+        padding:6.5%;
+    }
+    /*Les images des lieux d'activités*/
+    .im_act
+    {
+        height:100%;
+        background: no-repeat center/200% ;
+    }
+    /*Placement des images de chaque lieux*/
+    #vieux_port .im_act
+    {
+        background-image:url('../img/activity/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    }
