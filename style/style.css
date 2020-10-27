@@ -282,7 +282,7 @@ header + .conteneur + .conteneur
     margin-right:2.98%;
     border-radius:18px;
     background-color:#F2F2F2;
-    min-height:625px;
+    /* min-height:625px; */
     padding:2%;
 }
     /* Titre du bloc des hébergements à Marseille */
@@ -365,12 +365,11 @@ header + .conteneur + .conteneur
             {
                 margin-top:10px;
             }
-        /*Premier logement*/
+        /* Images du Premier logement au sixième logement*/
         #la_cannebiere .im_herg
         {
             background-image:url("../img/hosting/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
         }
-        /*Second logement*/
         #port .im_herg
         {
             background-image:url("../img/hosting/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
@@ -391,6 +390,12 @@ header + .conteneur + .conteneur
         {
             background-image:url("../img/hosting/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
         }
+    /*Le texte: Afficher plus*/
+    #herg_dispo + p
+    {
+        font-weight:bold;
+        font-size:0.9em;
+    }
 /* Bloc des logements populaires */
 #populaires
 {
