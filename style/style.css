@@ -1,8 +1,8 @@
 /* Outil déboguage */
-body .conteneur, body .conteneur *
+/* body .conteneur, body .conteneur *
 {
     border:solid 1px black;
-}
+} */
 /* Définition de la Police Raleway */
 @font-face 
 {
@@ -354,7 +354,7 @@ header + .conteneur + .conteneur
             height:75px;
         }
         /*Les images d'hebergement*/
-        .im_act
+        .im_herg
         {
             /* display:flex; */
             height:100%;
@@ -468,7 +468,8 @@ header + .conteneur + .conteneur
 
 /********* FIN DES SECTIONS HEBERGEMENTS A MARSEILLE - ET - LES PLUS POPULAIRES *********/
 
-/* --------Ombrage si posible  section a {box-shadow: 3px 3px 2px grey;}---------------- */
+/* --------Ombrage---------------- */
+section a {box-shadow:  0 0 0.8em grey;}
 
 
 /********* DEBUT DU VOLET ACTIVITES A MARSEILLE *********/
@@ -492,9 +493,27 @@ header + .conteneur + .conteneur +.conteneur
     {
         width:22.5%;
     }
-    #vieux_port
+    #vieux_port,#parc_calanques
     {
         width:22.5%;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius:18px;
+        overflow:hidden;
+    }
+    /*Les deux sous-divisions*/
+    #volet_vertic_deux,#volet_vertic_quatre
+    {
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    /*Les quatres sous-divisions*/
+    #pomegues,#frioul,#garde,#longchamp
+    {
+        width:100%;
+        height:45%;
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -511,14 +530,40 @@ header + .conteneur + .conteneur +.conteneur
         margin:0px;
         padding:6.5%;
     }
-    /*Les images des lieux d'activités*/
+    /*Les images des lieux d'activités pour les longs div*/
     .im_act
     {
         height:100%;
-        background: no-repeat center/200% ;
+        background: no-repeat center/210% ;
+    }
+    /*Les images des lieux d'activités pour les sous-divisions*/
+    #volet_vertic_deux .im_act,#volet_vertic_quatre .im_act
+    {
+        height:100%;
+        background: no-repeat center/100% ;
     }
     /*Placement des images de chaque lieux*/
     #vieux_port .im_act
     {
         background-image:url('../img/activity/medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
+    }
+    #parc_calanques .im_act
+    {
+        background-image:url('../img/activity/medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
+    }
+    #pomegues .im_act
+    {
+        background-image:url('../img/activity/medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
+    }
+    #frioul .im_act
+    {
+        background-image:url('../img/activity/medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
+    }
+    #garde .im_act
+    {
+        background-image:url('../img/activity/medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
+    }
+    #longchamp .im_act
+    {
+        background-image:url('../img/activity/medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
     }
