@@ -312,7 +312,8 @@ header + .conteneur + .conteneur
             overflow:hidden;
             border-radius:18px;
             display:flex;
-            align-items: flex-end;
+            flex-direction:column;
+            justify-content: flex-end;
         }
         /*Les bannières de dexcription pour les logements dans n'importe quelle section*/
         .description
@@ -350,8 +351,14 @@ header + .conteneur + .conteneur
         #hebergements_marseille .description
         {
             background-color:white;
-            width:100%;
             height:75px;
+        }
+        /*Les images d'hebergement*/
+        .im_herg
+        {
+            display:flex;
+            height:100%;
+            background: no-repeat center/100% ;
         }
             /*Etoiles de cette partie*/
             .description i
@@ -359,8 +366,31 @@ header + .conteneur + .conteneur
                 margin-top:10px;
             }
         /*Premier logement*/
-        #la_cannebiere
-        {}
+        #la_cannebiere .im_herg
+        {
+            background-image:url("../img/hosting/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+        }
+        /*Second logement*/
+        #port .im_herg
+        {
+            background-image:url("../img/hosting/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+        }
+        #mouettes .im_herg
+        {
+            background-image:url("../img/hosting/small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+        }
+        #mer .im_herg
+        {
+            background-image:url("../img/hosting/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+        }
+        #panier .im_herg
+        {
+            background-image:url("../img/hosting/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+        }
+        #amina .im_herg
+        {
+            background-image:url("../img/hosting/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+        }
 /* Bloc des logements populaires */
 #populaires
 {
