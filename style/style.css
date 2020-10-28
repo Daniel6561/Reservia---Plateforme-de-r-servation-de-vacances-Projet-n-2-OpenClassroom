@@ -585,7 +585,7 @@ footer
     padding-right:1%;
     font-size:0.9em;
     padding-top:2.3%;
-    padding-bottom:2.3%;
+    padding-bottom:1%;
 }
 footer .conteneur
 {
@@ -594,10 +594,12 @@ footer .conteneur
     max-width: 1350px;
     justify-content:space-between;
 }
+/* Différentes sections du pied de page */
 #a_propos,#hebergements,#assistance
 {
     flex:1;
 }
+/* Nom de chaque sections */
 footer h1
 {
     font-weight:bold;
