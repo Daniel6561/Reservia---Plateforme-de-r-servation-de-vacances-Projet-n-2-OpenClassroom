@@ -331,8 +331,8 @@ header + .conteneur + .conteneur
             font-size:0.7em;
             margin:0px;
         }
-        #fullstar {color:#0065FC;}
-        #emptystar {color:#F2F2F2;}
+        .fullstar i {color:#0065FC;}
+        .emptystar i {color:#F2F2F2;}
         /*Titre de chaque logement*/
         .description h2
         {
