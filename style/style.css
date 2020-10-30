@@ -1,8 +1,10 @@
+
 /* Outil déboguage */
-/* body .conteneur, body .conteneur *
+body , body *
 {
     border:solid 1px black;
-} */
+}
+
 /* Définition de la Police Raleway */
 @font-face 
 {
@@ -63,7 +65,8 @@ header .conteneur #volet_droit
     font-size:0.9em;
     margin:0px;
     padding:0px;
-    width:33.4%;
+    /* width:33.4%; */
+    width:345px;
 }
         /* Les menus principaux */
         nav
@@ -581,11 +584,14 @@ header + .conteneur + .conteneur +.conteneur
 footer
 {
     background-color: #F2F2F2;
-    padding-left:1%;
-    padding-right:1%;
+    padding-left:2%;
+    padding-right:2%;
     font-size:0.9em;
     padding-top:2.3%;
     padding-bottom:1%;
+    position:absolute;
+    left:0px;
+    right:0px;
 }
 footer .conteneur
 {
@@ -613,3 +619,135 @@ footer p
 }
 
 /********* FIN DU PIED DE PAGE *********/
+
+
+
+
+
+
+/********* DEBUT DES MEDIAS-QUERIES *********/
+
+
+/*---------------- Pour les smartphones ------------------*/
+@media all and (max-width:768px)
+{
+    /* body {background-color:green;} */
+    /*Je souhaite déplacer les menus de navigation et
+    donc je mets en relative le header pour pouvoir mettre les deux menus en absolute*/
+    header
+    {
+        margin-bottom: 90px;
+        justify-content:space-between;
+    }
+    header p
+    {
+        position:relative;
+    }
+    header p a
+    {
+        position:absolute;
+        right:0px;
+    }
+    nav
+    {
+        position:absolute;
+        top:60px;
+        height:60px;
+        left:0px;
+        width:100%;
+    }
+    nav a
+    {
+        border-bottom:solid 2px #F2F2F2;
+    }
+    /* Survol des menus */
+    nav a:hover
+    {
+        color:#0065FC;
+        border-top:0px;
+        border-bottom:solid 2px #0065FC;
+    }
+
+
+    /*Pour me faciliter la tâche, j'ai dû mettre la partie du
+    formulaire de recherhe et des filtres avec du flex*/
+    header + .conteneur
+    {
+        display:flex;
+        flex-direction:column;
+        margin:auto;
+        margin-bottom:40px;
+    }
+
+    /* Je mets le formulaire de recherche au centre*/
+    form
+    {
+        margin:auto;
+        margin-top:19px;
+        margin-bottom:30px;
+    }
+
+    /*Le volet des filtres*/
+    #filtres
+    {
+        flex-direction:column;
+        align-items:flex-start;
+        width:auto;
+        margin-bottom:50px;
+    }
+    #filtres p
+    {
+        margin-left:0px;
+        margin-bottom:10px;
+    }
+    /*je modifie l'affichage des filtres*/
+    #filtres ul
+    {
+        width:auto;
+        flex-wrap:wrap;
+        margin-left:6px;
+        align-content:space-between;
+    }
+    #filtres li
+    {
+        margin-bottom:10px;
+        height:50px;
+        position:relative;
+        padding-left:52px;
+    }
+    /*Je modifie l'affichage des icônes*/
+    #filtres span
+    {
+        height:54px;
+        width:54px;
+        border-radius:54px;
+        position:absolute;
+    }
+
+    /*Le bloc des hebergements les plus populaires à marseille*/
+    header + .conteneur + .conteneur
+    {
+        flex-direction:column-reverse;
+    }
+    #populaires
+    {
+        border-radius:0px;
+        position: absolute;
+        left:0px;
+        right:0px;
+        padding-left:5.85%;
+        padding-right:5.85%;
+        order:1;
+    }
+    #hebergements_marseille
+    {
+        order:2;
+        border-radius:0px;
+        position: relative;
+        background-color:white;/* 
+        left:0px;
+        right:0px;
+        padding-left:5.85%;
+        padding-right:5.85%; */
+    }
+}
