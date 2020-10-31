@@ -552,7 +552,7 @@ header + .conteneur + .conteneur +.conteneur
     #volet_vertic_deux .im_act,#volet_vertic_quatre .im_act
     {
         height:100%;
-        background: no-repeat center/100% ;
+        background: no-repeat center/127% ;
     }
     /*Placement des images de chaque lieux*/
     #vieux_port .im_act
@@ -830,4 +830,108 @@ footer p
     {
         margin-bottom:25px;
     }
+}
+/*---------------- Fin d'aptation pour les smartphones ------------------*/
+
+
+
+/*---------------- Adaptation pour les Petits ordis ------------------*/
+
+@media all and (max-width:1290px) and (min-width:904px)
+{
+    /* body {background-color:green;} */
+
+    /*Réglage du bloc hébergement et du bloc des logements les plus populaires dans la ville*/
+    header +.conteneur +.conteneur
+    {
+        flex-direction:column-reverse;
+    }
+    #hebergements_marseille
+    {
+        margin-right:0px;
+    }
+    #populaires
+    {
+        margin-bottom:20px;
+    }
+    #herg_popu
+    {
+        flex-direction:row;
+    }
+    #herg_popu a
+    {
+        width:30%;
+    }
+    .im_popu
+        {
+            width:100%;
+            /* height:100%; */
+            background: no-repeat center/170% ;
+        }
+    
+
+
+    /*Le volet des filtres*/
+    #filtres
+    {
+        align-items:flex-start;
+        justify-content: flex-start;
+        width:auto;
+        max-width:938px;
+        margin-bottom:0px;
+    }
+    /*Le mot Filtre*/
+    #filtres p
+    {
+        margin-left:0px;
+        margin-top:20px;
+    }
+    /*je modifie l'affichage des filtres*/
+    #filtres ul
+    {
+        /* width:100%; */
+        height:auto;
+        flex-wrap:wrap;
+        margin-left:25px;
+        align-content:space-between;
+    }
+    #filtres li
+    {
+        margin-bottom:10px;
+        height:50px;
+        position:relative;
+        padding-left:52px;
+        margin-right:10px;
+    }
+    /*Je modifie l'affichage des icônes*/
+    #filtres span
+    {
+        height:54px;
+        width:54px;
+        border-radius:54px;
+        position:absolute;
+    }
+
+    /*La phrase informative sur le nombre de logements*/
+    #nb_logments_ville
+    {
+        margin-top:25px;
+    }
+
+    /*Les images des lieux d'activités pour les longs div*/
+    .im_act
+    {
+        height:100%;
+        background: no-repeat center/450% ;
+    }
+}
+/*---------------- Fin d'adaptation pour les Petits ordis ------------------*/
+
+
+
+/*---------------- Adaptation pour les Tablettes ------------------*/
+
+@media all and (min-width:904px)
+{
+    body {background-color:green;}
 }
