@@ -703,8 +703,31 @@ footer p
     form
     {
         margin:auto;
+        width:auto;
         margin-top:19px;
         margin-bottom:30px;
+    }
+
+    /*Faire disparaître le mot recherche*/
+    #bouton_recherche
+    {
+        display:none;
+    }
+
+    /*  la loupe de recherche */
+    form input + span
+    {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-color:#0065FC;
+
+        /* flex:1; */
+        width:51px;
+    }
+    form input + span i
+    {
+        color:white;
     }
 
     /*Le volet des filtres*/
@@ -837,7 +860,14 @@ footer p
 }
 /*---------------- Fin d'aptation pour les smartphones ------------------*/
 
-
+@media all and (min-width:608px)
+{
+    /*Faire disparaître la loupe de recherche*/
+    form input + span
+    {
+        display:none;
+    }
+}
 
 /*---------------- Adaptation pour les Petits ordis ------------------*/
 

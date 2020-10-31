@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="icons/css/v4-shims.css"/>
         <link rel="stylesheet" href="icons/css/v4-shims.min.css"/>
 
+        <!-- Adaptation à la résolution du smartphone en ciblant la zone d'affichage simulée -->
+        <meta name="viewport" content="width=device-width"/>
+
         <!-- Feuille de style du projet -->
         <link href="style/style.css" rel="stylesheet" />
         <title>Reservia</title>
@@ -50,6 +53,9 @@
                     </span>
                     <input type="text" value="Marseille, France" id="champ_de_saisie"/>
                     <input type="submit" value="Rechercher" id="bouton_recherche"/>
+                    <span>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
                 </form>
     
                 <!-- Insertion des filtres -->
