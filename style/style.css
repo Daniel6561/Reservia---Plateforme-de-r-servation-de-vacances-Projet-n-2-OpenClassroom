@@ -1,9 +1,9 @@
 
 /* Outil déboguage */
-body , body *
+/* body , body *
 {
     border:solid 1px black;
-}
+} */
 
 /* Définition de la Police Raleway */
 @font-face 
@@ -297,6 +297,8 @@ header + .conteneur + .conteneur
     #hebergements_marseille h1, #populaires h1, header + .conteneur + .conteneur +.conteneur h1
     {
         margin:0px;
+        margin-top:25px;
+        margin-bottom:25px;
         font-size:1.4em;
         font-weight:bold;
     }
@@ -313,7 +315,7 @@ header + .conteneur + .conteneur
         /* Spécification pour l'ensemble des logements */
         #herg_dispo a
         {
-            width:235px;
+            min-width:235px;
             height:190px;
             border:5px white solid;
             overflow:hidden;
@@ -321,6 +323,7 @@ header + .conteneur + .conteneur
             display:flex;
             flex-direction:column;
             justify-content: flex-end;
+            margin-bottom:20px;
         }
         /*Les bannières de dexcription pour les logements dans n'importe quelle section*/
         .description
@@ -434,7 +437,7 @@ header + .conteneur + .conteneur
     flex-direction:column;
     justify-content: space-around;
     align-items:center;
-    height:96%;
+    /* height:100%; */
     margin-top:2px;
 }
 #herg_popu a
@@ -444,11 +447,12 @@ header + .conteneur + .conteneur
     border:5px solid white; border-radius: 18px;
     display:flex;justify-content: flex-end;
     overflow: hidden;
+    margin-bottom:20px;
 }
 #herg_popu .description
 {
     width:63%; /*45*/
-    padding:9%;
+    padding:20px;
 }
 
     /*Les images de cette section*/
@@ -609,13 +613,14 @@ footer .conteneur
 footer h1
 {
     font-weight:bold;
-    font-size:0.9em;
+    font-size:1em;
     margin:0px;
-    margin-bottom:25px;
+    margin-bottom:15px;
 }
 footer p
 {
-    margin-bottom:20px;
+    margin-bottom:10px;
+    font-size:0.9em;
 }
 
 /********* FIN DU PIED DE PAGE *********/
@@ -629,15 +634,28 @@ footer p
 
 
 /*---------------- Pour les smartphones ------------------*/
-@media all and (max-width:768px)
+@media all and (max-width:500px)
 {
     /* body {background-color:green;} */
+    /*Le conteneur après le body*/
+    #conteneur_princip
+    {
+        width:100%;
+        padding:0px;
+        position:relative;
+    }
+
     /*Je souhaite déplacer les menus de navigation et
     donc je mets en relative le header pour pouvoir mettre les deux menus en absolute*/
     header
     {
         margin-bottom: 90px;
         justify-content:space-between;
+    }
+    header .conteneur
+    {
+        padding-left:2%;
+        padding-right:2%;
     }
     header p
     {
@@ -677,6 +695,8 @@ footer p
         flex-direction:column;
         margin:auto;
         margin-bottom:40px;
+        padding-left:2%;
+        padding-right:2%;
     }
 
     /* Je mets le formulaire de recherche au centre*/
@@ -728,26 +748,86 @@ footer p
     header + .conteneur + .conteneur
     {
         flex-direction:column-reverse;
+        position:relative;
+        width:100%;
     }
     #populaires
     {
-        border-radius:0px;
-        position: absolute;
+        border-radius:0px;/* 
+        position: absolute; */
         left:0px;
         right:0px;
         padding-left:5.85%;
         padding-right:5.85%;
-        order:1;
     }
+    #herg_popu .description i
+    {
+        margin-top:50px;
+    }
+    /*Blocs des hébergements généraux à marseille*/
     #hebergements_marseille
     {
-        order:2;
         border-radius:0px;
         position: relative;
-        background-color:white;/* 
-        left:0px;
-        right:0px;
+        background-color:white;
+        margin-right:0px;
         padding-left:5.85%;
-        padding-right:5.85%; */
+        padding-right:5.85%;
+    }
+    #herg_dispo a
+    {
+        max-width:400px;
+        /* min-width:324px; */
+        height:235px;
+        width:100%;
+    }
+    .description
+    {
+        padding:12px;
+    }
+    /*Régler la marge du bas par rapport aux activités de marseille*/
+    header + .conteneur + .conteneur
+    {
+        margin-bottom:2px;
+    }
+
+    /*Je veux maintenant adapter la partie des activites à marseille*/
+    header + .conteneur + .conteneur +.conteneur
+    {
+        padding-left:2%;
+        padding-right:2%;
+        width:auto;
+        margin-bottom:15px;
+    }
+    #activites
+    {
+        flex-direction:column;
+        /* margin:auto; */
+        width:100%;
+        align-items:center;
+        height:auto;
+    }
+    #vieux_port,#parc_calanques,#pomegues,#frioul,#garde,#longchamp
+    {
+        height:300px;
+        width:400px;
+        margin-bottom:20px;
+    }
+    #volet_vertic_deux, #volet_vertic_quatre
+    {
+        width:auto;
+    }
+    
+
+    /*Je veux m'attaquer au pied de page*/
+    footer .conteneur
+    {
+        flex-direction:column;
+        padding-left:3%;
+        padding-right:3%;
+    }
+    footer div
+    {
+        margin-bottom:25px;
     }
 }
