@@ -634,7 +634,7 @@ footer p
 
 
 /*---------------- Pour les smartphones ------------------*/
-@media all and (max-width:500px)
+@media all and (max-width:607px)
 {
     /* body {background-color:green;} */
     /*Le conteneur après le body*/
@@ -764,6 +764,10 @@ footer p
     {
         margin-top:50px;
     }
+    #herg_popu a
+    {
+        max-width:430px;
+    }
     /*Blocs des hébergements généraux à marseille*/
     #hebergements_marseille
     {
@@ -837,7 +841,7 @@ footer p
 
 /*---------------- Adaptation pour les Petits ordis ------------------*/
 
-@media all and (max-width:1290px) and (min-width:904px)
+@media all and (max-width:1290px) and (min-width:608px)
 {
     /* body {background-color:green;} */
 
@@ -931,7 +935,61 @@ footer p
 
 /*---------------- Adaptation pour les Tablettes ------------------*/
 
-@media all and (min-width:904px)
+@media all and (max-width:903px) and (min-width:608px)
 {
-    body {background-color:green;}
+    
+    /* Bloc des hébergements populaires*/
+    #herg_popu
+    {
+        flex-wrap:wrap;
+    }
+    /* Changement pour les logements populaires */
+    #herg_popu a
+    {
+        max-width:235px;
+        height:190px;
+        border:5px white solid;
+        overflow:hidden;
+        border-radius:18px;
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        margin-bottom:20px;
+    }
+
+
+    /*Les bannières de dexcription pour les logements dans cette section*/
+    #herg_popu .description
+    {
+        background-color:white;
+        height:75px;
+        width:100%;
+        padding:5px;
+    }
+
+    /*Modification du bloc des activités*/
+    .im_popu
+    {
+        height:100%;
+        background: no-repeat center/110% ;
+    }
+
+    #vieux_port,#parc_calanques,#volet_vertic_deux,#volet_vertic_quatre
+    {
+        width:45%;
+        height:450px;
+    }
+
+    #activites
+    {
+        flex-wrap:wrap;
+        height:940px;
+        align-content: space-between;
+    }
+
+    /*modification du pied de page*/
+    footer div div
+    {
+        width:25%;
+    }
 }
