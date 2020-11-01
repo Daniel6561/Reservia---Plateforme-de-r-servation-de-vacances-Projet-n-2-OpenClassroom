@@ -25,6 +25,7 @@ body
 {
     padding-left:1%;
     padding-right:1%;
+    width:100%;
     margin:auto;
 }
 .conteneur
@@ -636,13 +637,13 @@ footer p
 /*---------------- Pour les smartphones ------------------*/
 @media all and (max-width:607px)
 {
-    /* body {background-color:green;} */
     /*Le conteneur après le body*/
     #conteneur_princip
     {
         width:100%;
         padding:0px;
         position:relative;
+        margin:auto;
     }
 
     /*Je souhaite déplacer les menus de navigation et
@@ -713,6 +714,11 @@ footer p
     {
         display:none;
     }
+    /*Diminuer la police du champ de saisie*/
+    #champ_de_saisie
+    {
+        font-size:0.65em;
+    }
 
     /*  la loupe de recherche */
     form input + span
@@ -736,7 +742,7 @@ footer p
         flex-direction:column;
         align-items:flex-start;
         width:auto;
-        margin-bottom:50px;
+        margin-bottom:0px;
     }
     #filtres p
     {
@@ -747,6 +753,7 @@ footer p
     #filtres ul
     {
         width:auto;
+        height:auto;
         flex-wrap:wrap;
         margin-left:6px;
         align-content:space-between;
@@ -776,16 +783,12 @@ footer p
     }
     #populaires
     {
-        border-radius:0px;/* 
-        position: absolute; */
-        left:0px;
-        right:0px;
+        border-radius:0px;
+        /* left:0px;
+        right:0px; */
+        width:auto;
         padding-left:5.85%;
         padding-right:5.85%;
-    }
-    #herg_popu .description i
-    {
-        margin-top:50px;
     }
     #herg_popu a
     {
@@ -810,7 +813,7 @@ footer p
     }
     .description
     {
-        padding:12px;
+        padding:10px;
     }
     /*Régler la marge du bas par rapport aux activités de marseille*/
     header + .conteneur + .conteneur
@@ -829,20 +832,20 @@ footer p
     #activites
     {
         flex-direction:column;
-        /* margin:auto; */
         width:100%;
         align-items:center;
         height:auto;
     }
+    /*Je modifie la hauteur des activités de marseille*/
     #vieux_port,#parc_calanques,#pomegues,#frioul,#garde,#longchamp
     {
         height:300px;
-        width:400px;
+        width:100%;
         margin-bottom:20px;
     }
     #volet_vertic_deux, #volet_vertic_quatre
     {
-        width:auto;
+        width:100%;
     }
     
 
@@ -858,7 +861,118 @@ footer p
         margin-bottom:25px;
     }
 }
+
+
+    /*Les appareils comme iPhone 5/SE*/
+    @media all and (max-width:325px)
+    {
+        /*J'adapte le formulaire de recherche*/
+        form
+        {
+            height:40px;
+        }
+        #champ_de_saisie
+        {
+            font-size:0.6em;
+        }
+        form i
+        {
+            font-size:0.6em;
+        }
+        form span
+        {
+            width:45px;
+        }
+        /*je modifie l'affichage des icones des filtres*/
+        #filtres span
+        {
+            height:52px;
+            width:52px;
+            border-radius:52px;
+            left:-5px;
+        }
+        /*Je modifie les images d'arrière plan*/
+        .im_popu {
+            width: 100%;
+            /* height: 100%; */
+            background: no-repeat center/160%;
+        }
+
+        .im_herg {
+            /* display: flex; */
+            height: 100%;
+            background: no-repeat center/110%;
+        }
+        /*J'adapte la hauteur des activités de marseille*/
+        #vieux_port, #parc_calanques, #pomegues, #frioul, #garde, #longchamp {
+            height: 280px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+
+    /*Peite pensée pour les utilisateurs de Galaxy Fold*/
+    @media all and (max-width:295px)
+    {
+        /*J'adapte le formulaire de recherche*/
+        form
+        {
+            height:35px;
+            border-radius:10px;
+        }
+        #champ_de_saisie
+        {
+            font-size:0.515em;
+        }
+        form i
+        {
+            font-size:0.55em;
+        }
+        form span
+        {
+            width:40px;
+        }
+
+        /*Je m'attaque aux logements populaires et mmodifie la disposition de la description*/
+        #herg_popu a {
+            min-width: 235px;
+            height: 190px;
+            border: 5px white solid;
+            overflow: hidden;
+            border-radius: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* margin-bottom: 20px; */
+        }
+        #herg_popu .description {
+            height: 75px;
+            width:100%;
+            padding:10px;
+        }
+
+        .im_herg ,.im_popu
+        {
+            /* display: flex; */
+            height: 100%;
+            background: no-repeat center/120%;
+        }
+        /*Je modifie la taille de chaque bloc présentant les activités de marseille*/
+        #vieux_port, #parc_calanques, #pomegues, #frioul, #garde, #longchamp {
+            height: 250px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+
 /*---------------- Fin d'aptation pour les smartphones ------------------*/
+
+
+
+
+
 
 @media all and (min-width:608px)
 {
@@ -869,16 +983,35 @@ footer p
     }
 }
 
-/*---------------- Adaptation pour les Petits ordis ------------------*/
+
+
+
+
+
+
+
+/*---------------- Adaptation pour les Petits ordis et Tablettes------------------*/
 
 @media all and (max-width:1290px) and (min-width:608px)
 {
-    /* body {background-color:green;} */
+    /*Le conteneur principale*/
+    #conteneur_princip
+    {
+        padding:0px;
+    }
+    /*Tout juste après le header*/
+    header + .conteneur
+    {
+        padding-left:1%;
+        padding-right:1%;
+    }
 
     /*Réglage du bloc hébergement et du bloc des logements les plus populaires dans la ville*/
     header +.conteneur +.conteneur
     {
         flex-direction:column-reverse;
+        padding-left:1%;
+        padding-right:1%;
     }
     #hebergements_marseille
     {
@@ -958,12 +1091,16 @@ footer p
         height:100%;
         background: no-repeat center/450% ;
     }
+    /*Le grand bloc concernant les activités à marseille*/
+    #activites_h
+    {
+        padding-left:1%;
+        padding-right:1%;
+    }
 }
-/*---------------- Fin d'adaptation pour les Petits ordis ------------------*/
 
 
-
-/*---------------- Adaptation pour les Tablettes ------------------*/
+    /*---------------- Uniquement pour les Tablettes ------------------*/
 
 @media all and (max-width:903px) and (min-width:608px)
 {
@@ -1023,3 +1160,8 @@ footer p
         width:25%;
     }
 }
+
+/*---------------- Fin d'adaptation pour les Petits ordis et Tablettes ------------------*/
+
+
+/********* FIN DES MEDIAS-QUERIES *********/
