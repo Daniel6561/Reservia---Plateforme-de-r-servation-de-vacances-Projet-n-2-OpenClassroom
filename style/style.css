@@ -17,6 +17,18 @@
 
 }
 
+/* Définition de la Police Raleway-Semibold */
+@font-face 
+{
+    font-family: 'raleway-bold';
+    src: url('Police/raleway-bold-webfont.woff2') format('woff2'),
+    url('Police/raleway-bold-webfont.woff') format('woff'),
+    url('Police/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body
 {
     font-family:'raleway', 'open-sans', Arial, Helvetica, sans-serif;
@@ -25,6 +37,10 @@ body
 {
     width:100%;
     margin:auto;
+}
+h1, h2
+{
+    font-family: 'raleway-bold';
 }
 .conteneur
 {
