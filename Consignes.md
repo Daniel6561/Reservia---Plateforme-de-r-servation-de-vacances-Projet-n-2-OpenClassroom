@@ -27,3 +27,6 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 ## Notes sur la réalisation du projet
 - L'integration est faite sur l'éditeur Visual Studio Code
 - Le fichier de style se trouve à l'adresse (./style/style.css)
+- Le fichier html ou page web se trouve à l'adresse (./index.html)
+- Le dossier de police se trouve à l'adresse (./style/Police/)
+- Le dossier des icônes se trouve à l'adresse (./icons/)
