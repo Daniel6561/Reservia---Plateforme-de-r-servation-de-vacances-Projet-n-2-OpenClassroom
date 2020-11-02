@@ -23,8 +23,6 @@ body
 }
 #conteneur_princip
 {
-    padding-left:1%;
-    padding-right:1%;
     width:100%;
     margin:auto;
 }
@@ -54,6 +52,8 @@ header .conteneur
 {
     display: flex;
     justify-content:space-between;
+    padding-left:1%;
+    padding-right:1%;
 }
 header img
 {
@@ -129,7 +129,12 @@ header .conteneur #volet_droit
 
 /********* DEBUT DU VOLET DE LA BARRE DE RECHERCHE - DES FILTRES ET DE LA PHRASE INFORMATIVE *********/
 /* Le bloc de la partie*/
-header + .conteneur {margin-bottom:36px;}
+header + .conteneur 
+{
+    margin-bottom:36px;
+    padding-left:1%;
+    padding-right:1%;
+}
 /* Titre de la partie */
 header + .conteneur h1
 {
@@ -256,14 +261,14 @@ form
     margin-top:36px;
     margin-left:6px;
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     font: size 0.9em;
 }
     /* L'icône d'information */
     #nb_logments_ville span
     {
         height:20px;
-        width:20px;
+        min-width:20px;
         display:flex;
         justify-content: center;
         align-items:center;
@@ -283,6 +288,8 @@ header + .conteneur + .conteneur
     align-items:stretch;
     justify-content: space-between;
     margin-bottom:66px;
+    padding-left:1%;
+    padding-right:1%;
 }
 /* Le bloc des hébergements disponibles */
 #hebergements_marseille
@@ -492,6 +499,8 @@ header + .conteneur + .conteneur +.conteneur
     justify-content: space-between;
     min-height:500px;
     margin-bottom:62px;
+    padding-left:1%;
+    padding-right:1%;
 }
 /*Les différentes activités*/
 #activites
@@ -779,6 +788,7 @@ footer p
     {
         flex-direction:column-reverse;
         position:relative;
+        padding:0px;
         width:100%;
     }
     #populaires
