@@ -252,6 +252,7 @@ form
         border-radius:25px;
         padding-right:2%;
         border:solid 3px #F2F2F2;
+        text-transform:capitalize;
     }
     /*Au survol des filtres*/
     #filtres li:hover
@@ -283,7 +284,7 @@ form
     margin-left:6px;
     display:flex;
     align-items:flex-start;
-    font: size 0.9em;
+    font-size: 0.9em;
 }
     /* L'icône d'information */
     #nb_logments_ville span
@@ -386,7 +387,7 @@ header + .conteneur + .conteneur
         /*Style du prix*/
         .chiffre
         {
-            font-weight:bold;
+            font-family:'raleway-bold';
         }
         /*Les bannières de dexcription pour les logements dans cette section*/
         #hebergements_marseille .description
