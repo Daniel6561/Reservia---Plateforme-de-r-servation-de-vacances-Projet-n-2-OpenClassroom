@@ -30,3 +30,4 @@ L'objectif est d'intégrer la maquette d'un site de planification de vacance nom
 - Le fichier html ou page web se trouve à l'adresse (./index.html)
 - Le dossier de police se trouve à l'adresse (./style/Police/)
 - Le dossier des icônes se trouve à l'adresse (./icons/)
+- Lien vers la validité CSS [ http://jigsaw.w3.org/css-validator/validator$link ]
