@@ -1,8 +1,9 @@
 # Reservia - Plateforme de reservation de vacance
 Deuxième projet du parcours "Développeur web" chez OpenClassroom.
 L'objectif est d'intégrer la maquette d'un site de reservation de vacance nommé "Reservia" (voir les maquettes ci-dessous).
-
+## Maquette pour ordinateur
 ![maquette desktop reservia](./img/mockup/desktop.png)
+## Maquette pour smartphone -- iPhone
 ![maquette phone reservia](./img/mockup/phone.png)
 
 ## Éléments fournis par l'entreprise virtuelle.
