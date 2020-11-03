@@ -253,6 +253,7 @@ form
         padding-right:2%;
         border:solid 3px #F2F2F2;
         text-transform:capitalize;
+        margin-right:8px;
     }
     /*Au survol des filtres*/
     #filtres li:hover
