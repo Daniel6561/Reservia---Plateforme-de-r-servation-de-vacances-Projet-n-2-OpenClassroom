@@ -749,7 +749,7 @@ footer p
     /*Diminuer la police du champ de saisie*/
     #champ_de_saisie
     {
-        font-size:0.65em;
+        font-size:0.68em;
     }
 
     /*  la loupe de recherche */
@@ -902,22 +902,15 @@ footer p
     @media all and (max-width:325px)
     {
         /*J'adapte le formulaire de recherche*/
-        /* form
-        {
-            height:40px;
-        }
         #champ_de_saisie
         {
             font-size:0.6em;
         }
         form i
         {
-            font-size:0.6em;
+            font-size:0.7em;
         }
-        form span
-        {
-            width:45px;
-        } */
+
         /*je modifie l'affichage des icones des filtres*/
         #filtres span
         {
@@ -951,14 +944,14 @@ footer p
     @media all and (max-width:295px)
     {
         /*J'adapte le formulaire de recherche*/
-        /* form
+        form
         {
-            height:35px;
+            height:40px;
             border-radius:10px;
         }
         #champ_de_saisie
         {
-            font-size:0.515em;
+            font-size:0.548em;
         }
         form i
         {
@@ -967,7 +960,14 @@ footer p
         form span
         {
             width:40px;
-        } */
+            height: 40px;
+        }
+        form input + span
+        {
+            border-radius:10px;
+            height:40px;
+            width:40px;
+        }
 
         /*Je m'attaque aux logements populaires et mmodifie la disposition de la description*/
         #herg_popu a {
