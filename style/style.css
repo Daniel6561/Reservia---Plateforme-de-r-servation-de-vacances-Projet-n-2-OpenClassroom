@@ -38,7 +38,7 @@ body
     width:100%;
     margin:auto;
 }
-h1, h2
+h1, h2, h3
 {
     font-family: 'raleway-bold';
 }
@@ -320,7 +320,7 @@ header + .conteneur + .conteneur
     padding:2%;
 }
     /* Titre du bloc des hébergements à Marseille */
-    #hebergements_marseille h1, #populaires h1, header + .conteneur + .conteneur +.conteneur h1
+    #hebergements_marseille h2, #populaires h2, header + .conteneur + .conteneur +.conteneur h2
     {
         margin:0px;
         margin-top:25px;
@@ -366,7 +366,7 @@ header + .conteneur + .conteneur
         .fullstar {color:#0065FC;}
         .emptystar {color:#F2F2F2;}
         /*Titre de chaque logement*/
-        .description h2
+        .description h3
         {
             font-size:0.9em;
             margin:0px;
@@ -506,7 +506,7 @@ header + .conteneur + .conteneur
 /********* FIN DES SECTIONS HEBERGEMENTS A MARSEILLE - ET - LES PLUS POPULAIRES *********/
 
     /* --------Ombrage pour les logements---------------- */
-    section a {box-shadow:  0 0 0.4em grey;}
+    section a, #activites_h a {box-shadow:  0 0 0.4em grey;}
 
 
 /********* DEBUT DU VOLET ACTIVITES A MARSEILLE *********/
@@ -561,7 +561,7 @@ header + .conteneur + .conteneur +.conteneur
         overflow:hidden;
     }
     /*Nom des lieux*/
-    #activites h2
+    #activites h3
     {
         font-weight:bold;
         font-size:0.9em;
@@ -638,7 +638,7 @@ footer .conteneur
     flex:1;
 }
 /* Nom de chaque sections */
-footer h1
+footer h2
 {
     font-weight:bold;
     font-size:1em;
