@@ -190,6 +190,11 @@ form
         /* flex:1; */
         width:51px;
     }
+    form input + span
+    {
+        height:50px;
+        border-radius:15px;
+    }
     /*Le champs de saisie*/
     #champ_de_saisie
     {
@@ -754,9 +759,11 @@ footer p
         justify-content:center;
         align-items:center;
         background-color:#0065FC;
+        position:relative;
+        left:-10px;
 
         /* flex:1; */
-        width:51px;
+        width:50px;
     }
     form input + span i
     {
@@ -895,7 +902,7 @@ footer p
     @media all and (max-width:325px)
     {
         /*J'adapte le formulaire de recherche*/
-        form
+        /* form
         {
             height:40px;
         }
@@ -910,7 +917,7 @@ footer p
         form span
         {
             width:45px;
-        }
+        } */
         /*je modifie l'affichage des icones des filtres*/
         #filtres span
         {
@@ -944,7 +951,7 @@ footer p
     @media all and (max-width:295px)
     {
         /*J'adapte le formulaire de recherche*/
-        form
+        /* form
         {
             height:35px;
             border-radius:10px;
@@ -960,7 +967,7 @@ footer p
         form span
         {
             width:40px;
-        }
+        } */
 
         /*Je m'attaque aux logements populaires et mmodifie la disposition de la description*/
         #herg_popu a {
