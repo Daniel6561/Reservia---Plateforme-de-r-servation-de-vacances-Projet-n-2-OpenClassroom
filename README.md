@@ -33,3 +33,5 @@ L'objectif est d'intégrer la maquette d'un site de reservation de vacance nomm�
 - Le dossier de police se trouve à l'adresse (./style/Police/)
 - Le dossier des icônes se trouve à l'adresse (./icons/)
 - Lien vers la validité CSS [ http://jigsaw.w3.org/css-validator/validator$link ]
+
+## Visualiser le site ici: https://daniel6561.github.io/Reservia--OpenClassrooms/
